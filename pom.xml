@@ -16,6 +16,11 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		  <!-- SonarQube Server URL -->
+  <sonar.host.url>http://172.16.16.101:9000</sonar.host.url>
+
+  <!-- SonarQube Authentication Token -->
+  <sonar.login>squ_14533f45c500107a71d863f4ad935517912f6aa8</sonar.login>
 	</properties>
 
 	<dependencies>
@@ -41,6 +46,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			    <plugin>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>4.8.0.2856</version>
+    </plugin>
 		</plugins>
 	</build>
 
